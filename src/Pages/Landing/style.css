@@ -83,7 +83,7 @@ body{
 .CardTittle{
     font-size: 3vh;
     font-weight: 700;
-    margin: 20%;
+    margin: 10%;
 }
 
 .CardText{
@@ -147,7 +147,7 @@ body{
 }
 
 .CardAuthentification{
-    width: 30%;
+    width: 25%;
     height: auto;
     text-align: center;
     justify-content: center;
@@ -197,7 +197,6 @@ body{
 .Footer{
     display: flex;
     justify-content: space-between;
-    border: 2px solid rebeccapurple;
     padding-left: 4vh;
     padding-right: 4vh;
 }
@@ -207,3 +206,7 @@ body{
     gap: 3vh;
 }
 
+.Icon{
+    width: 15vh;
+    height: auto;
+}
