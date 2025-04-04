@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #020202;
+    display: flex;
+    flex-direction: column;
+    color: #F2EDE3;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rebeccapurple;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.FooterSection2{
+    display: flex;
+    gap: 3vh;
+}
+
+.Logo{
+    height: 50vh;
+    width: auto;
+}
+
+.header{
+    height: 10vh;
+    width: auto;
+}
+
+.SpaceBig{
+    margin-top: 800px;
+}
+
+.SpaceMedium{
+    margin-top: 600px;
+}
+
+.SpaceSmall{
+    margin-top: 200px;
+}
+
