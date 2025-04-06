@@ -1,0 +1,1 @@
+export {default as CardComment} from './CardComment/cardComment.js'
