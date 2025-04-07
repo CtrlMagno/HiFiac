@@ -1,4 +1,4 @@
-import * as components from '../../components/index.js';
+import * as components from '../../components/index.js'; 
 
 
 
@@ -23,8 +23,8 @@ class AppContainer extends HTMLElement {
 
         <card-comment
 
-        userProfile=""
-        userName="jlouisce"
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="jlouisce"
 
         ></card-comment>
 

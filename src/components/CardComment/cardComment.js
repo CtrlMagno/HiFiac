@@ -1,7 +1,7 @@
 class CardComment extends HTMLElement {
 
     static get observedAttributes (){
-        return ['userProfile', 'userName'];
+        return ['UserProfile', 'UserName'];
     }
 
     constructor(){
@@ -130,9 +130,9 @@ class CardComment extends HTMLElement {
         <div class="CardCommentSection">
             <div class="CardHeader">
 
-                <img src="${this.userProfile}" alt="" class="UserProfile">
+                <img src="${this.getAttribute('UserProfile')}" alt="" class="UserProfile">
 
-                <p class="UserName">${this.userName}</p>
+                <p class="UserName">${this.getAttribute('UserName')}</p>
 
             </div>
 
