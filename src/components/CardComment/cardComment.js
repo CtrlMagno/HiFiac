@@ -110,7 +110,7 @@ class CardComment extends HTMLElement {
                 background-color: #F2EDE3;
                 width: fit-content;
                 height: auto;
-                border-radius: 6px;
+                border-radius: 30px;
                 padding-right: 10vh;
                 padding-left: 10vh;
                 padding-top: 2vh;

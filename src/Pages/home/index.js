@@ -17,6 +17,11 @@ class AppContainer extends HTMLElement {
         this.shadowRoot.innerHTML = `
         <style>
 
+        img{
+        width: 2vh;
+        height: auto;
+        }
+
         </style>
 
         <div class="Container">
@@ -27,6 +32,72 @@ class AppContainer extends HTMLElement {
         UserName="jlouisce"
 
         ></card-comment>
+
+        <card-viewer
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="Xdavid016"
+        Comment="This song..."
+        SongName="GODDES"
+        Album="Primera Musa"
+        Artist="Omar Courtz"
+        AlbumCover="../../../public/imgs/albumPrimeraMusa.jpeg"
+
+        ></card-viewer>
+
+        <card-viewer
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="Pepe69"
+        Comment="BROOOOOO"
+        SongName="FANTASMA | AVC"
+        Album="DATA"
+        Artist="Tainy"
+        AlbumCover="../../../public/imgs/albumDATA.jpeg"
+
+        ></card-viewer>
+
+        <card-viewer
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="Xdavid016"
+        Comment="This song..."
+        SongName="GODDES"
+        Album="Primera Musa"
+        Artist="Omar Courtz"
+        AlbumCover="../../../public/imgs/albumPrimeraMusa.jpeg"
+
+        ></card-viewer>
+
+        <card-viewer
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="Pepe69"
+        Comment="BROOOOOO"
+        SongName="FANTASMA | AVC"
+        Album="DATA"
+        Artist="Tainy"
+        AlbumCover="../../../public/imgs/albumDATA.jpeg"
+
+        ></card-viewer>
+
+        <card-viewer
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="Xdavid016"
+        Comment="This song..."
+        SongName="GODDES"
+        Album="Primera Musa"
+        Artist="Omar Courtz"
+        AlbumCover="../../../public/imgs/albumPrimeraMusa.jpeg"
+
+        ></card-viewer>
+
+        <card-viewer
+        UserProfile="../../../public/icons/user en circulo-09.png" 
+        UserName="Pepe69"
+        Comment="BROOOOOO"
+        SongName="FANTASMA | AVC"
+        Album="DATA"
+        Artist="Tainy"
+        AlbumCover="../../../public/imgs/albumDATA.jpeg"
+
+        ></card-viewer>
 
         </div>
 
