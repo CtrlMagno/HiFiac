@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     color: #F2EDE3;
-    height: 100vh;
+    min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -25,10 +25,10 @@ body{
 }
 
 .LogoImage{
-    max-width: 30%;
+    max-width: 400px;
     height: auto;
     margin-right: 15%;
-    margin-top: 10%;
+    margin-top: 11%;
     display: flex;
 }
 
@@ -43,15 +43,15 @@ body{
 }
 
 .SpaceMedium{
-    margin-top: 600px;
+    margin-top: 500px;
 }
 
 .SpaceSmall{
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .Motto{
-    font-size: 8vh;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     margin: 0px;
     font-weight: 600;
     text-align: center;
@@ -67,106 +67,121 @@ body{
 
 .CardSection{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea un grid que ajuste las columnas */
-    gap: 8%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     justify-items: center;
-    
+    padding: 0 1rem;
 }
 
 .Card{
-    /* border: 2px solid #F2EDE3; */
     text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.CircleSmall{
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    width: 30%;
+    height: auto;
+    z-index: -1;
+}
+
+.CircleMedium{
+    position: absolute;
+    top: 60%;
+    left: -5%;
     width: 50%;
-    padding: 1%;
+    height: auto;
+    z-index: -1;
+}
+
+.CircleBig{
+    position: absolute;
+    top: -2%;
+    left: 40%;
+    width: 60%;
+    height: auto;
+    z-index: -1;
 }
 
 .CardTittle{
-    font-size: 3vh;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: 700;
-    margin: 10%;
+    margin: 1rem 0;
 }
 
 .CardText{
     font-weight: 400;
-    font-size: 2vh;
-    margin: 10%;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    margin: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
-    .CardTittle {
-      font-size: 1.2rem;  /* Ajusta el tamaño de los encabezados en pantallas pequeñas */
-    }
-  
-    .CardSection {
-      font-size: 0.9rem;  /* Ajusta el tamaño del texto en pantallas pequeñas */
-    }
-}
-
-.CardTextContainer{
-    width: 25%;
+.CardTextContainer,
+.CardTextContainer2{
+    width: 90%;
+    max-width: 400px;
     height: auto;
+    margin: 2rem auto;
 }
 
 .GlobalCardContainer{
     display: flex;
-    margin-right: 2vh;
-    justify-content: end;
+    justify-content: center;
+    padding: 0 1rem;
 }
 
 .CardTextTitle{
-    margin-bottom: 3vh;
-    font-size: 35px;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-weight: 600;
 }
 
 .CardTextInfo{
-    margin-top: 1vh;
-    font-size: 15px;
+    margin-top: 0.5rem;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 400;
-}
-
-.CardTextContainer2{
-    width: 25%;
-    height: auto;
-    margin-top: 200px;
-    margin: 3vh;
 }
 
 .MegaTittle{
     font-weight: 600;
     text-align: center;
-    font-size: 8vh;
+    font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 .CardAuthentificationContainer{
     display: flex;
-    text-align: center ;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
-    gap: 20vh;
-    
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
 .CardAuthentification{
-    width: 25%;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
     border-radius: 40px;
+    padding: 1rem;
 }
 
 .CardTittle1{
-    font-size: 30px;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: 600;
-    margin: 5vh;
+    margin: 1rem 0;
 }
 
 .CardText1{
-    margin: 5vh;
-    font-size: 15px;
+    margin: 1rem 0;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 300;
-    margin: 5vh;
 }
 
 .CardBotton{
@@ -175,8 +190,6 @@ body{
     color: black;
     justify-content: center;
     align-items: center;
-    font-size: 20%;
-    
 }
 
 .CardBottonText{    
@@ -187,26 +200,76 @@ body{
     width: fit-content;
     height: auto;
     border-radius: 6px;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    margin-bottom: 5vh;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0;
 }
 
 .Footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 4vh;
-    padding-right: 4vh;
+    padding: 1rem;
+    margin-top: auto;
 }
 
 .FooterSection2{
     display: flex;
-    gap: 3vh;
+    gap: 1rem;
 }
 
 .Icon{
-    width: 15vh;
+    width: 80px;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .LogoImage {
+        max-width: 150px;
+        margin-top: 2%;
+    }
+
+    .MottoContainer1,
+    .MottoContainer2 {
+        margin: 0;
+    }
+
+    .CardSection {
+        grid-template-columns: 1fr;
+    }
+
+    .CardAuthentificationContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .CircleSmall,
+    .CircleMedium,
+    .CircleBig {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LogoImage {
+        max-width: 120px;
+    }
+
+    .Motto {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .Card {
+        padding: 0.5rem;
+    }
+
+    .CardTextContainer,
+    .CardTextContainer2 {
+        width: 95%;
+    }
 }

@@ -17,7 +17,19 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1,
+            },
+          },
+        ],
+        include: [
+          path.resolve(__dirname, "src"),
+          path.resolve(__dirname, "public"),
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -26,7 +38,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".css"],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -34,6 +46,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: "./public",
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    hot: true,
   },
 };
