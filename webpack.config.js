@@ -2,11 +2,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/Pages/Landing/index.ts",
+  mode: 'development',
+  entry: "./src/Pages/home/appContainer.ts",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -39,16 +41,27 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".js", ".css"],
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/Pages/Landing/index.html",
+      template: "./src/Pages/home/home.html",
+      inject: true,
+      filename: 'index.html'
     }),
   ],
   devServer: {
     static: {
       directory: path.join(__dirname, "public"),
+      publicPath: "/"
     },
     hot: true,
+    port: 8080,
+    historyApiFallback: true,
+    devMiddleware: {
+      publicPath: "/"
+    }
   },
 };

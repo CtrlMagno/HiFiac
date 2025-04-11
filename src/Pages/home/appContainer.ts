@@ -1,9 +1,12 @@
+import CardComment from '../../components/cardComment';
+import CardViewer from '../../components/cardViewer';
+
 class AppContainer extends HTMLElement {
-    shadowRoot: ShadowRoot;
+    private shadow: ShadowRoot;
 
     constructor() {
         super();
-        this.shadowRoot = this.attachShadow({ mode: 'open' });
+        this.shadow = this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback(): void {
@@ -11,30 +14,30 @@ class AppContainer extends HTMLElement {
     }
 
     render(): void {
-        if (!this.shadowRoot) return;
+        if (!this.shadow) return;
 
-        this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="../../../public/styles/appContainer.css">
+        this.shadow.innerHTML = `
+        <link rel="stylesheet" href="/styles/appContainer.css">
         <div class="Container">
             <card-comment
-                UserProfile="../../../public/icons/user en circulo-09.png" 
+                UserProfile="/icons/user en circulo-09.png" 
                 UserName="jlouisce"
             ></card-comment>
 
             <card-viewer
-                UserProfile="../../../public/icons/user en circulo-09.png" 
+                UserProfile="/icons/user en circulo-09.png" 
                 UserName="Xdavid016"
                 Comment="This song..."
                 SongName="GODDES"
                 Album="Primera Musa"
                 Artist="Omar Courtz"
-                AlbumCover="../../../public/imgs/albumPrimeraMusa.jpeg"
+                AlbumCover="/imgs/albumPrimeraMusa.jpeg"
             ></card-viewer>
-
-            <!-- Repeticiones omitidas para abreviar -->
         </div>
         `;
     }
 }
 
-customElements.define('app-container', AppContainer);
+if (!customElements.get('app-container')) {
+    customElements.define('app-container', AppContainer);
+}

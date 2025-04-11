@@ -1,12 +1,13 @@
 class CardViewer extends HTMLElement {
+    private shadow: ShadowRoot;
 
-    static get observedAttributes (): string[] {
+    static get observedAttributes(): string[] {
         return ['UserProfile', 'UserName', 'Comment', 'SongName', 'Album', 'AlbumCover', 'Artist'];
     }
 
-    constructor(){
+    constructor() {
         super();
-        this.attachShadow({mode: 'open'});
+        this.shadow = this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback(): void {
@@ -14,19 +15,17 @@ class CardViewer extends HTMLElement {
     }
 
     attributeChangedCallback(name: string, oldValue: string, newValue: string): void {
-        if(oldValue !== newValue){
+        if (oldValue !== newValue) {
             this.setAttribute(name, newValue);
             this.render();
         }
     }
 
-
     render(): void {
-        if (this.shadowRoot) { 
-        
-            this.shadowRoot.innerHTML=`
-            <link rel="stylesheet" href="../../../public/styles/cardViewer.css">
+        if (!this.shadow) return;
 
+        this.shadow.innerHTML = `
+            <link rel="stylesheet" href="/styles/cardViewer.css">
             <div class="MegaCardContainer">
                 <div class="GlobalCardContainer">
                     <div class="CardViewer">
@@ -51,17 +50,17 @@ class CardViewer extends HTMLElement {
                         </div>
                         <div class="Commentary">
                             <textarea class="TextCamp1" placeholder="Comment something :/"></textarea>
-                            <a href=""><img src="../../../public/icons/publicar-08.png" alt="" class="IconMessage"></a>
+                            <a href=""><img src="/icons/publicar-08.png" alt="" class="IconMessage"></a>
                         </div>
-
                     </div>
                 </div>
             </div>
-            `;
-        }
+        `;
     }
 }
 
-customElements.define('card-viewer', CardViewer)
+if (!customElements.get('card-viewer')) {
+    customElements.define('card-viewer', CardViewer);
+}
 
 export default CardViewer;
