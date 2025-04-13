@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src"],
+  "include": ["src", "public"],
   "exclude": ["node_modules"]
 
   

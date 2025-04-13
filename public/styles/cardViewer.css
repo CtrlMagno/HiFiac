@@ -1,5 +1,3 @@
-
-
 img{
     width: 6vh;
     height: auto;
@@ -16,23 +14,21 @@ img{
     height: auto;
 }
 
-
 .GlobalCardContainer{
     border: 2px solid #FFC7C8;
     width: 80%;
+    max-width: 800px;
     height: auto;
     border-radius: 20px;
-    padding-right: 5vh;
-    padding-left: 5vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding: 2vh 5vh;
     color: #F2EDE3;
-    margin: 5vh;
+    margin: 5vh auto;
 }
 
 .MegaCardContainer{
     display: flex;
     justify-content: center;
+    padding: 0 2vh;
 }
 
 .Comment{
@@ -45,16 +41,19 @@ img{
     background-color: #F2EDE3;
     border-radius: 30px;
     width: 100%;
-    height: 40%;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    height: auto;
+    min-height: 200px;
+    margin: 4vh 0;
+    flex-wrap: wrap;
 }
 
 .AlbumCover{
     width: 20%;
+    min-width: 150px;
     height: auto;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    object-fit: cover;
 }
 
 .Music1{
@@ -62,29 +61,32 @@ img{
     flex-direction: column;
     justify-content: space-between;
     color: #020202;
+    padding: 2vh;
+    flex: 1;
+    min-width: 200px;
 }
 
 .SongName{
-    font-size: 6vh;
+    font-size: clamp(2vh, 6vh, 8vh);
     font-weight: 700;
-    letter-spacing: 2vh;
-    margin-top: 1vh;
-    margin-left: 2vh;
-    margin-bottom: 0px;
+    letter-spacing: 1vh;
+    margin: 1vh 0 0 2vh;
     color: #6f6f6f;
 }
 
 .Album{
-    margin: 0px;
+    margin: 0;
     color: #6f6f6f;
     margin-left: 2vh;
+    font-size: clamp(1.2vh, 2vh, 3vh);
 }
 
 .Artist{
-    margin: 0px;
+    margin: 0;
     color: #6f6f6f;
     margin-left: 2vh;
     margin-bottom: 2vh;
+    font-size: clamp(1.2vh, 2vh, 3vh);
 }
 
 .Commentary{
@@ -93,8 +95,9 @@ img{
 }
 
 .TextCamp1{
-    width: 94%;
+    width: 98%;
     height: auto;
+    min-height: 50px;
     padding: 10px;
     resize: none;
     border: 1px solid #F2EDE3;
@@ -110,6 +113,96 @@ img{
 
 .IconMessage{
     margin: 2vh;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .GlobalCardContainer {
+        width: 85%;
+        padding: 2vh 4vh;
+    }
+
+    .CardHeader {
+        gap: 3vh;
+    }
+
+    .UserProfile {
+        width: 8vh;
+    }
+
+    .Music {
+        flex-direction: row;
+    }
+
+    .AlbumCover {
+        width: 20%;
+        min-width: 150px;
+    }
+
+    .SongName {
+        font-size: clamp(2vh, 4vh, 6vh);
+        letter-spacing: 0.5vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .GlobalCardContainer {
+        width: 90%;
+        padding: 2vh 3vh;
+    }
+
+    .CardHeader {
+        gap: 2vh;
+    }
+
+    .UserProfile {
+        width: 7vh;
+    }
+
+    .Music {
+        flex-direction: column;
+    }
+
+    .AlbumCover {
+        width: 100%;
+        min-width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .SongName {
+        font-size: clamp(2vh, 3vh, 4vh);
+        letter-spacing: 0.3vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .GlobalCardContainer {
+        width: 95%;
+        padding: 2vh;
+    }
+
+    .CardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vh;
+    }
+
+    .UserProfile {
+        width: 6vh;
+    }
+
+    .SongName {
+        font-size: clamp(1.5vh, 2.5vh, 3vh);
+        letter-spacing: 0.2vh;
+    }
+
+    .Music1 {
+        padding: 1vh;
+    }
+
+    .TextCamp1 {
+        width: 95%;
+    }
 }
 
 

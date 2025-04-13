@@ -7,6 +7,8 @@ class AppContainer extends HTMLElement {
     constructor() {
         super();
         this.shadow = this.attachShadow({ mode: 'open' });
+        new CardComment();
+        new CardViewer();
     }
 
     connectedCallback(): void {
@@ -17,6 +19,8 @@ class AppContainer extends HTMLElement {
         if (!this.shadow) return;
 
         this.shadow.innerHTML = `
+
+        
         <link rel="stylesheet" href="/styles/appContainer.css">
         <div class="Container">
             <card-comment

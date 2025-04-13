@@ -22,18 +22,18 @@ body{
     gap: 3vh;
 }
 
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vh;
+    position: relative;
+}
+
 .Logo{
     height: 7vh;
     width: auto;
-    margin-top: 4vh;
-    margin-left: 19vh;
-}
-
-.Header{
-    height: 1vh;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
 }
 
 .SpaceBig{
@@ -48,15 +48,24 @@ body{
     margin-top: 200px;
 }
 
-.Icon{
-    width: 7vh;
-    height: auto;
+.UltraSpaceSmall{
+    margin-top: 80px;
 }
 
 .NavBarIcons{
+    display: flex;
     gap: 5vh;
-    margin-top: 4vh;
-    margin-right: 19vh;
+    align-items: center;
+}
+
+.Icon{
+    width: 7vh;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Icon:hover {
+    transform: scale(1.1);
 }
 
 img{
@@ -235,4 +244,63 @@ a{
 
 .IconMessage{
     margin: 2vh;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .Header {
+        padding: 2vh 3vh;
+    }
+
+    .Logo {
+        height: 6vh;
+    }
+
+    .NavBarIcons {
+        gap: 4vh;
+    }
+
+    .Icon {
+        width: 6vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        padding: 2vh;
+    }
+
+    .Logo {
+        height: 5vh;
+    }
+
+    .NavBarIcons {
+        gap: 3vh;
+    }
+
+    .Icon {
+        width: 5vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header {
+        padding: 1.5vh;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .Logo {
+        height: 4vh;
+    }
+
+    .NavBarIcons {
+        gap: 2vh;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Icon {
+        width: 4vh;
+    }
 }
