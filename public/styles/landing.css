@@ -1,0 +1,275 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #020202;
+    display: flex;
+    flex-direction: column;
+    color: #F2EDE3;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.BackSphere{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 50% 30%,
+        #2a213f,
+        #0a060f 40%,
+        #000 70%
+    );
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+    z-index: 0;
+}
+
+.LogoImage{
+    max-width: 400px;
+    height: auto;
+    margin-right: 15%;
+    margin-top: 11%;
+    display: flex;
+}
+
+.Logo{
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.SpaceBig{
+    margin-top: 800px;
+}
+
+.SpaceMedium{
+    margin-top: 500px;
+}
+
+.SpaceSmall{
+    margin-top: 300px;
+}
+
+.Motto{
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.MottoContainer1{
+    margin-right: 30%;
+}
+
+.MottoContainer2{
+    margin-left: 15%;
+}
+
+.CardSection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+.Card{
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.CircleSmall{
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    width: 30%;
+    height: auto;
+    z-index: -1;
+}
+
+.CircleMedium{
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+}
+
+.CircleBig{
+    position: absolute;
+    top: -2%;
+    left: 40%;
+    width: 60%;
+    height: auto;
+    z-index: -1;
+}
+
+.CardTittle{
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.CardText{
+    font-weight: 400;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    margin: 1rem 0;
+}
+
+.CardTextContainer,
+.CardTextContainer2{
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.GlobalCardContainer{
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.CardTextTitle{
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 600;
+}
+
+.CardTextInfo{
+    margin-top: 0.5rem;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-weight: 400;
+}
+
+.MegaTittle{
+    font-weight: 600;
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.CardAuthentificationContainer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.CardAuthentification{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 1rem;
+}
+
+.CardTittle1{
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.CardText1{
+    margin: 1rem 0;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-weight: 300;
+}
+
+.CardBotton{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardBottonText{    
+    display: flex;
+    text-align: center;
+    border: 2px solid #F2EDE3;
+    background-color: #F2EDE3;
+    width: fit-content;
+    height: auto;
+    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.Footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.FooterSection2{
+    display: flex;
+    gap: 1rem;
+}
+
+.Icon{
+    width: 80px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .LogoImage {
+        max-width: 150px;
+        margin-top: 2%;
+    }
+
+    .MottoContainer1,
+    .MottoContainer2 {
+        margin: 0;
+    }
+
+    .CardSection {
+        grid-template-columns: 1fr;
+    }
+
+    .CardAuthentificationContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .CircleSmall,
+    .CircleMedium,
+    .CircleBig {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LogoImage {
+        max-width: 120px;
+    }
+
+    .Motto {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .Card {
+        padding: 0.5rem;
+    }
+
+    .CardTextContainer,
+    .CardTextContainer2 {
+        width: 95%;
+    }
+}
