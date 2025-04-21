@@ -10,20 +10,6 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.BackSphere{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle at 50% 30%,
-        #2a213f,
-        #0a060f 40%,
-        #000 70%
-    );
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
-    z-index: 0;
-}
-
 .LogoImage{
     max-width: 400px;
     height: auto;
@@ -87,6 +73,7 @@ body{
     width: 30%;
     height: auto;
     z-index: -1;
+    transition: all 0.3s ease;
 }
 
 .CircleMedium{
@@ -96,6 +83,7 @@ body{
     width: 50%;
     height: auto;
     z-index: -1;
+    transition: all 0.3s ease;
 }
 
 .CircleBig{
@@ -105,6 +93,27 @@ body{
     width: 60%;
     height: auto;
     z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.CircleBig1{
+    position: absolute;
+    top: 420%;
+    left: 60%;
+    width: 40%;
+    height: auto;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.CircleBig2{
+    position: absolute;
+    top: 450%;
+    left: -10%;
+    width: 60%;
+    height: auto;
+    z-index: -1;
+    transition: all 0.3s ease;
 }
 
 .CardTittle{
@@ -202,6 +211,14 @@ body{
     border-radius: 6px;
     padding: 0.5rem 1.5rem;
     margin: 1rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.CardBottonText:hover {
+    background-color: #e6d9c9;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(242, 237, 227, 0.3);
 }
 
 .Footer{
@@ -220,6 +237,38 @@ body{
 .Icon{
     width: 80px;
     height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .CircleSmall {
+        width: 25%;
+        top: -15%;
+        left: 25%;
+    }
+
+    .CircleMedium {
+        width: 45%;
+        top: 55%;
+        left: -3%;
+    }
+
+    .CircleBig {
+        width: 55%;
+        top: -5%;
+        left: 35%;
+    }
+
+    .CircleBig1 {
+        width: 35%;
+        top: 400%;
+        left: 55%;
+    }
+
+    .CircleBig2 {
+        width: 55%;
+        top: 430%;
+        left: -8%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -248,10 +297,34 @@ body{
         gap: 1rem;
     }
 
-    .CircleSmall,
-    .CircleMedium,
+    .CircleSmall {
+        width: 20%;
+        top: -10%;
+        left: 30%;
+    }
+
+    .CircleMedium {
+        width: 40%;
+        top: 50%;
+        left: 0%;
+    }
+
     .CircleBig {
-        display: none;
+        width: 50%;
+        top: -8%;
+        left: 30%;
+    }
+
+    .CircleBig1 {
+        width: 30%;
+        top: 380%;
+        left: 50%;
+    }
+
+    .CircleBig2 {
+        width: 50%;
+        top: 410%;
+        left: -5%;
     }
 }
 
@@ -271,5 +344,35 @@ body{
     .CardTextContainer,
     .CardTextContainer2 {
         width: 95%;
+    }
+
+    .CircleSmall {
+        width: 15%;
+        top: -5%;
+        left: 35%;
+    }
+
+    .CircleMedium {
+        width: 35%;
+        top: 45%;
+        left: 5%;
+    }
+
+    .CircleBig {
+        width: 45%;
+        top: -10%;
+        left: 25%;
+    }
+
+    .CircleBig1 {
+        width: 25%;
+        top: 360%;
+        left: 45%;
+    }
+
+    .CircleBig2 {
+        width: 45%;
+        top: 390%;
+        left: -2%;
     }
 }
