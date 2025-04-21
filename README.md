@@ -1,7 +1,7 @@
 
 # HiFiac (High Fidelity Audio Connect ) - Social Music Network 🔈🔈
 
-This is a collaborative project of 4 members, Duvan Luis - Mariana Quintero - Maria Castro - JuanPa Caicedo, HiFiac is a social network where users will have their own authentication, have their own profile, can post ideas accompanied by their favorite songs, in addition to reacting to other posts, Developed with an elegant design, in addition to a responsive design to achieve the maximum experience on computer, tablet or cell phone.
+This is a project of my own property, HiFiac is a social network where users will have their own authentication, have their own profile, can post ideas accompanied by their favorite songs, in addition to reacting to other posts, Developed with an elegant design, in addition to a responsive design to achieve the maximum experience on computer, tablet or cell phone.
 
 ## Main Functionalities 😶‍🌫️😶‍🌫️
 
