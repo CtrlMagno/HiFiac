@@ -1,0 +1,1651 @@
+/* Variables globales */
+:root {
+  --primary-color: #1DB954;
+  --secondary-color: #020202;
+  --text-color: #FFFFFF;
+  --background-color: #020202;
+  --error-color: #E22134;
+  --success-color: #1DB954;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Layout */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  margin-top: 2rem;
+}
+
+/* Componentes comunes */
+.Icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.Logo {
+  height: 40px;
+}
+
+/* Utilidades */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; } 
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #020202;
+    display: flex;
+    flex-direction: column;
+    color: #F2EDE3;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.FooterSection2{
+    display: flex;
+    gap: 3vh;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vh;
+    position: relative;
+}
+
+.Logo{
+    height: 7vh;
+    width: auto;
+    margin: 0;
+}
+
+.SpaceBig{
+    margin-top: 800px;
+}
+
+.SpaceMedium{
+    margin-top: 600px;
+}
+
+.SpaceSmall{
+    margin-top: 200px;
+}
+
+.UltraSpaceSmall{
+    margin-top: 80px;
+}
+
+.NavBarIcons{
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+}
+
+.Icon{
+    width: 7vh;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Icon:hover {
+    transform: scale(1.1);
+}
+
+img{
+    width: 3vh;
+    height: auto;
+}
+
+.CardCommentSection{
+    border: 1px solid #FFC7C8;
+    width: 80%;
+    border-radius: 20px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.GlobalContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.UserProfile{
+    width: 10vh;
+    height: auto;
+}
+
+.CardHeader{
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+
+.UserName{
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.TextCamp{
+    width: 98%;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #F2EDE3;
+    border-radius: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 14px;
+    background-color: #F2EDE3;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.CardFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IconMusic{
+    width: 9vh;
+    height: auto;
+}
+
+.Button{
+    display: flex;
+    text-align: center;
+    color: #020202;
+    background-color: #F2EDE3;
+    width: fit-content;
+    height: auto;
+    border-radius: 6px;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 5vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.GlobalCardContainer{
+    border: 2px solid #FFC7C8;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: #F2EDE3;
+}
+
+.MegaCardContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Comment{
+    font-weight: 300;
+}
+
+.Music{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2EDE3;
+    border-radius: 30px;
+    width: 100%;
+    height: 40%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.AlbumCover{
+    width: 20%;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Music1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #020202;
+}
+
+.SongName{
+    font-size: 6vh;
+    font-weight: 700;
+    letter-spacing: 2vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    margin-bottom: 0px;
+    color: #6f6f6f;
+}
+
+.Album{
+    margin: 0px;
+    color: #6f6f6f;
+    margin-left: 2vh;
+}
+
+.Artist{
+    margin: 0px;
+    color: #6f6f6f;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+}
+
+.Commentary{
+    display: flex;
+    align-items: center;
+}
+
+.TextCamp1{
+    width: 94%;
+    height: auto;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #F2EDE3;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+    font-size: 14px;
+    background-color: #F2EDE3;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IconMessage{
+    margin: 2vh;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .Header {
+        padding: 2vh 3vh;
+    }
+
+    .Logo {
+        height: 6vh;
+    }
+
+    .NavBarIcons {
+        gap: 4vh;
+    }
+
+    .Icon {
+        width: 6vh;
+    }
+
+    .GlobalCardContainer,
+    .CardCommentSection {
+        width: 90%;
+    }
+
+    .SongName {
+        font-size: 4vh;
+        letter-spacing: 1vh;
+    }
+
+    .Music {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .AlbumCover {
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        padding: 1vh 2vh;
+    }
+
+    .Logo {
+        height: 5vh;
+    }
+
+    .NavBarIcons {
+        gap: 3vh;
+    }
+
+    .Icon {
+        width: 5vh;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        padding: 2vh;
+    }
+
+    .FooterSection2 {
+        justify-content: center;
+    }
+
+    .GlobalCardContainer,
+    .CardCommentSection {
+        width: 95%;
+        padding: 2vh;
+    }
+
+    .CardHeader {
+        gap: 2vh;
+    }
+
+    .TextCamp,
+    .TextCamp1 {
+        width: 100%;
+    }
+
+    .Button {
+        padding: 1vh 5vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header {
+        padding: 1vh;
+    }
+
+    .Logo {
+        height: 4vh;
+    }
+
+    .NavBarIcons {
+        gap: 2vh;
+    }
+
+    .Icon {
+        width: 4vh;
+    }
+
+    .UltraSpaceSmall {
+        margin-top: 40px;
+    }
+
+    .SpaceSmall {
+        margin-top: 100px;
+    }
+
+    .SpaceMedium {
+        margin-top: 300px;
+    }
+
+    .SpaceBig {
+        margin-top: 400px;
+    }
+
+    .SongName {
+        font-size: 3vh;
+        letter-spacing: 0.5vh;
+    }
+
+    .Music1 {
+        padding: 1vh;
+    }
+
+    .Album,
+    .Artist {
+        font-size: 0.9em;
+    }
+
+    .FooterText,
+    .FooterText1 {
+        font-size: 0.9em;
+    }
+}
+
+/* Add fluid typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(14px + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Add smooth transitions for responsive changes */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+.Logo{
+    width: 200px;
+    height: auto;
+}
+
+.Icon {
+    width: 80px;
+}
+/* Estilos para el componente PostCreator */
+.GlobalContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.PostCreatorCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #e1e5e9;
+}
+
+.CardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.UserProfile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    border: 2px solid #e1e5e9;
+}
+
+.UserInfo {
+    flex: 1;
+}
+
+.UserName {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1c1e21;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.PostType {
+    font-size: 12px;
+    color: #65676b;
+    margin: 2px 0 0 0;
+    line-height: 1.2;
+}
+
+.PostContent {
+    margin-bottom: 15px;
+}
+
+.TextArea {
+    width: 100%;
+    min-height: 80px;
+    max-height: 200px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #1c1e21;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.TextArea::placeholder {
+    color: #65676b;
+}
+
+.CharacterCount {
+    text-align: right;
+    font-size: 12px;
+    color: #65676b;
+    margin-bottom: 10px;
+}
+
+.ImagePreview {
+    margin: 15px 0;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e1e5e9;
+}
+
+.ImagePreview img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.RemoveImageBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.RemoveImageBtn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.ErrorMessage {
+    background: #ffe6e6;
+    color: #d63031;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #fab1a0;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.SuccessMessage {
+    background: #e8f5e8;
+    color: #00b894;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #a8e6cf;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.CardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.LeftActions {
+    display: flex;
+    gap: 8px;
+}
+
+.RightActions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ActionButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f0f2f5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.ActionButton:hover {
+    background: #e4e6ea;
+}
+
+.ActionIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.CancelButton {
+    background: transparent;
+    border: 1px solid #d0d7de;
+    color: #656d76;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.CancelButton:hover {
+    background: #f6f8fa;
+    border-color: #bcc5ce;
+}
+
+.PublishButton {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+    min-width: 80px;
+}
+
+.PublishButton:hover {
+    background: #166fe5;
+}
+
+.PublishButton:disabled {
+    background: #bcc0c4;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .PostCreatorCard {
+        margin: 0 10px;
+        padding: 15px;
+    }
+    
+    .CardFooter {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+    
+    .RightActions {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ImagePreview {
+    animation: slideIn 0.3s ease-out;
+}
+
+.ErrorMessage,
+.SuccessMessage {
+    animation: slideIn 0.3s ease-out;
+} 
+/* Estilos para el componente PostFeed */
+
+/* FORZAR TAMAÑO DE AVATARES - MÁXIMA PRIORIDAD */
+:host img[src*="user en circulo"],
+:host img.UserAvatar,
+:host .UserAvatar,
+.FeedContainer img[src*="user en circulo"],
+.FeedContainer img.UserAvatar,
+.FeedContainer .UserAvatar {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+}
+
+.FeedContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Estados de carga y vacío */
+.LoadingState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #65676b;
+}
+
+.LoadingSpinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e4e6ea;
+    border-top: 3px solid #1877f2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.EmptyState {
+    text-align: center;
+    padding: 60px 20px;
+    color: #65676b;
+}
+
+.EmptyIcon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.EmptyState h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #1c1e21;
+}
+
+.EmptyState p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Tarjetas de posts */
+.PostCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid #e1e5e9;
+    overflow: hidden;
+}
+
+/* Header del post */
+.PostHeader {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px 12px;
+}
+
+.FeedContainer .PostCard .PostHeader .UserAvatar,
+.PostCard .PostHeader .UserAvatar,
+.PostHeader .UserAvatar,
+img.UserAvatar {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin-right: 12px !important;
+    border: 2px solid #e1e5e9 !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+}
+
+.UserInfo {
+    flex: 1;
+}
+
+.Username {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1c1e21;
+    margin: 0 0 2px 0;
+    line-height: 1.2;
+}
+
+.PostTime {
+    font-size: 12px;
+    color: #65676b;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Contenido del post */
+.PostContent {
+    padding: 0 20px 16px;
+}
+
+.PostText {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #1c1e21;
+    margin: 0 0 12px 0;
+    word-wrap: break-word;
+}
+
+.PostImage {
+    margin-top: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e1e5e9;
+}
+
+.PostImg {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer del post */
+.PostFooter {
+    padding: 8px 20px 16px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.PostActions {
+    display: flex;
+    gap: 20px;
+}
+
+.ActionBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+    font-size: 14px;
+    color: #65676b;
+}
+
+.ActionBtn:hover {
+    background: #f0f2f5;
+}
+
+.ActionIcon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.ActionCount {
+    font-weight: 500;
+    min-width: 16px;
+    text-align: left;
+}
+
+.LikeBtn.liked {
+    color: #e41e3f;
+}
+
+.LikeBtn.liked:hover {
+    background: #fdf0f2;
+}
+
+/* Sección de comentarios */
+.CommentsSection {
+    padding: 12px 20px 16px;
+    border-top: 1px solid #f0f2f5;
+    background: #f8f9fa;
+}
+
+.Comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.Comment:last-child {
+    margin-bottom: 0;
+}
+
+.CommentAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e1e5e9;
+    flex-shrink: 0;
+}
+
+.CommentContent {
+    flex: 1;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 16px;
+    border: 1px solid #e1e5e9;
+}
+
+.CommentUsername {
+    font-weight: 600;
+    font-size: 12px;
+    color: #1c1e21;
+    margin-right: 6px;
+}
+
+.CommentText {
+    font-size: 13px;
+    color: #1c1e21;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+.ShowMoreComments {
+    background: transparent;
+    border: none;
+    color: #65676b;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-top: 8px;
+    transition: color 0.2s ease;
+}
+
+.ShowMoreComments:hover {
+    color: #1877f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .FeedContainer {
+        padding: 0 5px;
+    }
+    
+    .PostCard {
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .PostHeader {
+        padding: 12px 15px 8px;
+    }
+    
+    .PostContent {
+        padding: 0 15px 12px;
+    }
+    
+    .PostFooter {
+        padding: 6px 15px 12px;
+    }
+    
+    .CommentsSection {
+        padding: 10px 15px 12px;
+    }
+    
+    .FeedContainer .PostCard .PostHeader .UserAvatar,
+    .PostCard .PostHeader .UserAvatar,
+    .PostHeader .UserAvatar,
+    img.UserAvatar {
+        width: 34px !important;
+        height: 34px !important;
+        min-width: 34px !important;
+        min-height: 34px !important;
+        max-width: 34px !important;
+        max-height: 34px !important;
+        margin-right: 10px !important;
+    }
+    
+    .PostText {
+        font-size: 15px;
+    }
+    
+    .PostActions {
+        gap: 15px;
+    }
+    
+    .ActionBtn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .FeedContainer {
+        padding: 0;
+    }
+    
+    .PostCard {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+    
+    .PostHeader {
+        padding: 10px 12px 6px;
+    }
+    
+    .PostContent {
+        padding: 0 12px 10px;
+    }
+    
+    .PostFooter {
+        padding: 5px 12px 10px;
+    }
+    
+    .CommentsSection {
+        padding: 8px 12px 10px;
+    }
+    
+    .FeedContainer .PostCard .PostHeader .UserAvatar,
+    .PostCard .PostHeader .UserAvatar,
+    .PostHeader .UserAvatar,
+    img.UserAvatar {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        max-width: 32px !important;
+        max-height: 32px !important;
+        margin-right: 8px !important;
+    }
+    
+    .PostText {
+        font-size: 14px;
+    }
+    
+    .PostActions {
+        gap: 12px;
+    }
+    
+    .ActionBtn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    
+    .EmptyState {
+        padding: 40px 20px;
+    }
+    
+    .EmptyIcon {
+        font-size: 40px;
+    }
+    
+    .EmptyState h3 {
+        font-size: 16px;
+    }
+    
+    .EmptyState p {
+        font-size: 13px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.PostCard {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Estados de hover mejorados */
+.PostCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease;
+}
+
+/* Efectos en botones */
+.ActionBtn:active {
+    transform: scale(0.95);
+}
+
+.LikeBtn.liked .ActionIcon {
+    animation: heartBeat 0.6s ease-in-out;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.3); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.2); }
+    70% { transform: scale(1); }
+} 
+/* Estilos para el CommentModal */
+
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.ModalContainer {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out;
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Header del Modal */
+.ModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e1e5e9;
+    background: #f8f9fa;
+}
+
+.ModalHeader h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+.CloseButton {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #65676b;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.CloseButton:hover {
+    background: #e4e6ea;
+}
+
+/* Preview del Post */
+.PostPreview {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e1e5e9;
+    background: #f8f9fa;
+}
+
+.PostAuthor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.AuthorAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    border: 2px solid #e1e5e9;
+}
+
+.AuthorName {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.PostText {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #1c1e21;
+}
+
+/* Sección de Comentarios */
+.CommentsSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.CommentsHeader {
+    padding: 16px 24px 8px;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.CommentsCount {
+    font-size: 14px;
+    font-weight: 600;
+    color: #65676b;
+}
+
+.CommentsList {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 24px;
+    max-height: 300px;
+}
+
+.NoComments {
+    text-align: center;
+    padding: 40px 20px;
+    color: #65676b;
+    font-style: italic;
+}
+
+/* Comentarios Individuales */
+.CommentItem {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f5;
+    gap: 12px;
+}
+
+.CommentItem:last-child {
+    border-bottom: none;
+}
+
+.CommentAvatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e1e5e9;
+    flex-shrink: 0;
+}
+
+.CommentContent {
+    flex: 1;
+    min-width: 0;
+}
+
+.CommentHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.CommentAuthor {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1c1e21;
+}
+
+.CommentTime {
+    font-size: 12px;
+    color: #65676b;
+}
+
+.CommentText {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1c1e21;
+    word-wrap: break-word;
+}
+
+/* Formulario de Comentarios */
+.CommentForm {
+    border-top: 1px solid #e1e5e9;
+    padding: 16px 24px;
+    background: white;
+}
+
+.CommentInputContainer {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.CurrentUserAvatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e1e5e9;
+    flex-shrink: 0;
+}
+
+.CommentInput {
+    flex: 1;
+    border: 1px solid #e1e5e9;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.4;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s ease;
+    min-height: 36px;
+    max-height: 120px;
+}
+
+.CommentInput:focus {
+    border-color: #1877f2;
+}
+
+.CommentInput::placeholder {
+    color: #65676b;
+}
+
+.CommentFormFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CharacterCount {
+    font-size: 12px;
+    color: #65676b;
+    transition: color 0.2s ease;
+}
+
+.CharacterCount.limit-warning {
+    color: #e17055;
+}
+
+.CharacterCount.limit-danger {
+    color: #d63031;
+    font-weight: 600;
+}
+
+.SubmitButton {
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    min-width: 80px;
+}
+
+.SubmitButton:hover:not(:disabled) {
+    background: #166fe5;
+}
+
+.SubmitButton:disabled {
+    background: #bcc0c4;
+    cursor: not-allowed;
+}
+
+/* Mensajes */
+.MessageContainer {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.MessageContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.MessageContainer.error {
+    background: #ffe6e6;
+    color: #d63031;
+    border: 1px solid #fab1a0;
+}
+
+.MessageContainer.success {
+    background: #e8f5e8;
+    color: #00b894;
+    border: 1px solid #a8e6cf;
+}
+
+/* Login Prompt */
+.LoginPrompt {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid #e1e5e9;
+    background: #f8f9fa;
+}
+
+.LoginPrompt p {
+    margin: 0 0 16px 0;
+    color: #65676b;
+    font-size: 14px;
+}
+
+.LoginButton {
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.LoginButton:hover {
+    background: #166fe5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ModalOverlay {
+        padding: 10px;
+    }
+    
+    .ModalContainer {
+        max-height: 90vh;
+        border-radius: 12px;
+    }
+    
+    .ModalHeader {
+        padding: 16px 20px;
+    }
+    
+    .PostPreview {
+        padding: 12px 20px;
+    }
+    
+    .CommentsList {
+        padding: 0 20px;
+    }
+    
+    .CommentForm {
+        padding: 12px 20px;
+    }
+    
+    .CommentInputContainer {
+        gap: 8px;
+    }
+    
+    .CurrentUserAvatar,
+    .CommentAvatar {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .AuthorAvatar {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ModalOverlay {
+        padding: 0;
+        align-items: flex-end;
+    }
+    
+    .ModalContainer {
+        max-height: 95vh;
+        border-radius: 12px 12px 0 0;
+        margin-bottom: 0;
+    }
+    
+    .ModalHeader {
+        padding: 12px 16px;
+    }
+    
+    .ModalHeader h3 {
+        font-size: 16px;
+    }
+    
+    .PostPreview {
+        padding: 10px 16px;
+    }
+    
+    .CommentsList {
+        padding: 0 16px;
+        max-height: 250px;
+    }
+    
+    .CommentForm {
+        padding: 10px 16px;
+    }
+    
+    .CommentInput {
+        border-radius: 16px;
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .SubmitButton {
+        border-radius: 16px;
+        padding: 6px 16px;
+        font-size: 13px;
+    }
+    
+    .CommentText {
+        font-size: 13px;
+    }
+    
+    .CharacterCount {
+        font-size: 11px;
+    }
+}
+
+/* Scrollbar personalizado */
+.CommentsList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.CommentsList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.CommentsList::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.CommentsList::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+} 

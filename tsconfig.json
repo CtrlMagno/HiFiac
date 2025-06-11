@@ -1,18 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "ES6",
+    "target": "ES2020",
+    "module": "ES2020",
     "moduleResolution": "node",
-    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
+      "@assets/*": ["assets/*"],
+      "@styles/*": ["styles/*"],
+      "@flux/*": ["flux/*"]
+    }
   },
-  "include": ["src", "public"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
-
-  
-
 }
-
   

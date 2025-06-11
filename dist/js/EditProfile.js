@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{console.log("Edit Profile page loaded")}))})();

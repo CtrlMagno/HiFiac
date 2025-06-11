@@ -1,0 +1,409 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #020202;
+    display: flex;
+    flex-direction: column;
+    color: #F2EDE3;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.FooterSection2{
+    display: flex;
+    gap: 3vh;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vh;
+    position: relative;
+}
+
+.Logo{
+    height: 7vh;
+    width: auto;
+    margin: 0;
+}
+
+.SpaceBig{
+    margin-top: 800px;
+}
+
+.SpaceMedium{
+    margin-top: 600px;
+}
+
+.SpaceSmall{
+    margin-top: 200px;
+}
+
+.UltraSpaceSmall{
+    margin-top: 80px;
+}
+
+.NavBarIcons{
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+}
+
+.Icon{
+    width: 7vh;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Icon:hover {
+    transform: scale(1.1);
+}
+
+img{
+    width: 3vh;
+    height: auto;
+}
+
+.CardCommentSection{
+    border: 1px solid #FFC7C8;
+    width: 80%;
+    border-radius: 20px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.GlobalContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.UserProfile{
+    width: 10vh;
+    height: auto;
+}
+
+.CardHeader{
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+
+.UserName{
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.TextCamp{
+    width: 98%;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #F2EDE3;
+    border-radius: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 14px;
+    background-color: #F2EDE3;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.CardFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IconMusic{
+    width: 9vh;
+    height: auto;
+}
+
+.Button{
+    display: flex;
+    text-align: center;
+    color: #020202;
+    background-color: #F2EDE3;
+    width: fit-content;
+    height: auto;
+    border-radius: 6px;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 5vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.GlobalCardContainer{
+    border: 2px solid #FFC7C8;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: #F2EDE3;
+}
+
+.MegaCardContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Comment{
+    font-weight: 300;
+}
+
+.Music{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2EDE3;
+    border-radius: 30px;
+    width: 100%;
+    height: 40%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.AlbumCover{
+    width: 20%;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Music1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #020202;
+}
+
+.SongName{
+    font-size: 6vh;
+    font-weight: 700;
+    letter-spacing: 2vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    margin-bottom: 0px;
+    color: #6f6f6f;
+}
+
+.Album{
+    margin: 0px;
+    color: #6f6f6f;
+    margin-left: 2vh;
+}
+
+.Artist{
+    margin: 0px;
+    color: #6f6f6f;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+}
+
+.Commentary{
+    display: flex;
+    align-items: center;
+}
+
+.TextCamp1{
+    width: 94%;
+    height: auto;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #F2EDE3;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+    font-size: 14px;
+    background-color: #F2EDE3;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.IconMessage{
+    margin: 2vh;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .Header {
+        padding: 2vh 3vh;
+    }
+
+    .Logo {
+        height: 6vh;
+    }
+
+    .NavBarIcons {
+        gap: 4vh;
+    }
+
+    .Icon {
+        width: 6vh;
+    }
+
+    .GlobalCardContainer,
+    .CardCommentSection {
+        width: 90%;
+    }
+
+    .SongName {
+        font-size: 4vh;
+        letter-spacing: 1vh;
+    }
+
+    .Music {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .AlbumCover {
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        padding: 1vh 2vh;
+    }
+
+    .Logo {
+        height: 5vh;
+    }
+
+    .NavBarIcons {
+        gap: 3vh;
+    }
+
+    .Icon {
+        width: 5vh;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        padding: 2vh;
+    }
+
+    .FooterSection2 {
+        justify-content: center;
+    }
+
+    .GlobalCardContainer,
+    .CardCommentSection {
+        width: 95%;
+        padding: 2vh;
+    }
+
+    .CardHeader {
+        gap: 2vh;
+    }
+
+    .TextCamp,
+    .TextCamp1 {
+        width: 100%;
+    }
+
+    .Button {
+        padding: 1vh 5vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header {
+        padding: 1vh;
+    }
+
+    .Logo {
+        height: 4vh;
+    }
+
+    .NavBarIcons {
+        gap: 2vh;
+    }
+
+    .Icon {
+        width: 4vh;
+    }
+
+    .UltraSpaceSmall {
+        margin-top: 40px;
+    }
+
+    .SpaceSmall {
+        margin-top: 100px;
+    }
+
+    .SpaceMedium {
+        margin-top: 300px;
+    }
+
+    .SpaceBig {
+        margin-top: 400px;
+    }
+
+    .SongName {
+        font-size: 3vh;
+        letter-spacing: 0.5vh;
+    }
+
+    .Music1 {
+        padding: 1vh;
+    }
+
+    .Album,
+    .Artist {
+        font-size: 0.9em;
+    }
+
+    .FooterText,
+    .FooterText1 {
+        font-size: 0.9em;
+    }
+}
+
+/* Add fluid typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(14px + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Add smooth transitions for responsive changes */
+* {
+    transition: all 0.3s ease-in-out;
+}

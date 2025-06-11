@@ -1,0 +1,55 @@
+.Container{
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 10vh;
+    border: 1px solid #FFC7C8;
+    border-radius: 20px;
+    margin: 5vh;
+    gap: 1vh;
+    padding: 0 2vh;
+}
+
+.Container1{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    margin-right: 8vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+.ContainerCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ArtistContainer{
+    text-decoration: none;
+    color: #F2EDE3;
+}
+
+.ArtistName{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.ArtistProfile{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 8vh;
+}
+
+
+.ArtistProfileContainer{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    margin-right: 8vh;
+}

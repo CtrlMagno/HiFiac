@@ -1,0 +1,201 @@
+                .Icon{
+                    width: 7vh;
+                    height: auto;
+                }
+
+                .NavBarIcons{
+                    gap: 5vh;
+                    margin-top: 4vh;
+                    margin-right: 19vh;
+                }
+
+                img{
+                    width: 3vh;
+                    height: auto;
+                }
+
+                .CardCommentSection{
+                    border: 1px solid #FFC7C8;
+                    width: 80%;
+                    max-width: 800px;
+                    border-radius: 20px;
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2vh 5vh;
+                    margin: 0 auto;
+                }
+
+                .GlobalContainer{
+                    display: flex;
+                    justify-content: center;
+                    margin: 4vh 0;
+                    padding: 0 2vh;
+                }
+
+                .UserProfile{
+                    width: 10vh;
+                    height: auto;
+                }
+
+                .CardHeader{
+                    display: flex;
+                    align-items: center;
+                    gap: 5vh;
+                }
+
+                .UserName{
+                    font-size: 100%;
+                    font-weight: 600;
+                }
+
+                .TextCamp{
+                    width: 98%;
+                    height: 150px;
+                    padding: 10px;
+                    resize: none;
+                    border: 1px solid #F2EDE3;
+                    border-radius: 20px;
+                    margin: 2vh 0;
+                    font-size: 14px;
+                    background-color: #F2EDE3;
+                    outline: none;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+
+                .CardFooter{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 2vh;
+                }
+
+                .IconMusic{
+                    width: 2px;
+                    height: 2px;
+                }
+
+                .Button{
+                    display: flex;
+                    text-align: center;
+                    color: #020202;
+                    background-color: #F2EDE3;
+                    width: auto;
+                    min-width: 120px;
+                    height: auto;
+                    border-radius: 30px;
+                    padding: 1.5vh 4vh;
+                    margin-bottom: 3vh;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    box-sizing: border-box;
+                }
+
+                .Button:hover {
+                    background-color: #e6d9c9;
+                    transform: scale(1.02);
+                }
+
+                a{
+                    text-decoration: none;
+                }
+
+                /* Media Queries for Responsive Design */
+                @media screen and (max-width: 1024px) {
+                    .CardCommentSection {
+                        width: 85%;
+                        padding: 2vh 4vh;
+                    }
+
+                    .CardHeader {
+                        gap: 3vh;
+                    }
+
+                    .UserProfile {
+                        width: 8vh;
+                    }
+
+                    .Button {
+                        padding: 1.5vh 3vh;
+                        margin-bottom: 3vh;
+                    }
+
+                    .TextCamp {
+                        height: 130px;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    .CardCommentSection {
+                        width: 90%;
+                        padding: 2vh 3vh;
+                    }
+
+                    .CardHeader {
+                        gap: 2vh;
+                    }
+
+                    .UserProfile {
+                        width: 7vh;
+                    }
+
+                    .Button {
+                        padding: 1.5vh 2.5vh;
+                        margin-bottom: 2.5vh;
+                    }
+
+                    .TextCamp {
+                        height: 120px;
+                    }
+
+                    .IconMusic {
+                        width: 7vh;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    .CardCommentSection {
+                        width: 95%;
+                        padding: 2vh;
+                    }
+
+                    .CardHeader {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1vh;
+                    }
+
+                    .UserProfile {
+                        width: 6vh;
+                    }
+
+                    .Button {
+                        width: 90%;
+                        padding: 1.5vh;
+                        margin: 0 auto 2vh;
+                    }
+
+                    .CardFooter {
+                        flex-direction: column;
+                        align-items: stretch;
+                        gap: 1vh;
+                    }
+
+                    .TextCamp {
+                        height: 100px;
+                        width: 95%;
+                    }
+
+                    .IconMusic {
+                        width: 6vh;
+                    }
+
+                    .NavBarIcons {
+                        margin-right: 10vh;
+                        gap: 3vh;
+                    }
+                }
+          
