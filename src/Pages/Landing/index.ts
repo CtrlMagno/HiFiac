@@ -42,4 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
       logoImg.style.transform = 'scale(1)';
     }, 200);
   }
-}); 
+});
