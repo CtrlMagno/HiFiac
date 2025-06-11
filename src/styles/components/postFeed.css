@@ -1,0 +1,433 @@
+/* Estilos para el componente PostFeed */
+
+/* FORZAR TAMAÑO DE AVATARES - MÁXIMA PRIORIDAD */
+:host img[src*="user en circulo"],
+:host img.UserAvatar,
+:host .UserAvatar,
+.FeedContainer img[src*="user en circulo"],
+.FeedContainer img.UserAvatar,
+.FeedContainer .UserAvatar {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+}
+
+.FeedContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Estados de carga y vacío */
+.LoadingState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #65676b;
+}
+
+.LoadingSpinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e4e6ea;
+    border-top: 3px solid #1877f2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.EmptyState {
+    text-align: center;
+    padding: 60px 20px;
+    color: #65676b;
+}
+
+.EmptyIcon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.EmptyState h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #1c1e21;
+}
+
+.EmptyState p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Tarjetas de posts */
+.PostCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid #e1e5e9;
+    overflow: hidden;
+}
+
+/* Header del post */
+.PostHeader {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px 12px;
+}
+
+.FeedContainer .PostCard .PostHeader .UserAvatar,
+.PostCard .PostHeader .UserAvatar,
+.PostHeader .UserAvatar,
+img.UserAvatar {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin-right: 12px !important;
+    border: 2px solid #e1e5e9 !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+}
+
+.UserInfo {
+    flex: 1;
+}
+
+.Username {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1c1e21;
+    margin: 0 0 2px 0;
+    line-height: 1.2;
+}
+
+.PostTime {
+    font-size: 12px;
+    color: #65676b;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Contenido del post */
+.PostContent {
+    padding: 0 20px 16px;
+}
+
+.PostText {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #1c1e21;
+    margin: 0 0 12px 0;
+    word-wrap: break-word;
+}
+
+.PostImage {
+    margin-top: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e1e5e9;
+}
+
+.PostImg {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer del post */
+.PostFooter {
+    padding: 8px 20px 16px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.PostActions {
+    display: flex;
+    gap: 20px;
+}
+
+.ActionBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+    font-size: 14px;
+    color: #65676b;
+}
+
+.ActionBtn:hover {
+    background: #f0f2f5;
+}
+
+.ActionIcon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.ActionCount {
+    font-weight: 500;
+    min-width: 16px;
+    text-align: left;
+}
+
+.LikeBtn.liked {
+    color: #e41e3f;
+}
+
+.LikeBtn.liked:hover {
+    background: #fdf0f2;
+}
+
+/* Sección de comentarios */
+.CommentsSection {
+    padding: 12px 20px 16px;
+    border-top: 1px solid #f0f2f5;
+    background: #f8f9fa;
+}
+
+.Comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.Comment:last-child {
+    margin-bottom: 0;
+}
+
+.CommentAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e1e5e9;
+    flex-shrink: 0;
+}
+
+.CommentContent {
+    flex: 1;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 16px;
+    border: 1px solid #e1e5e9;
+}
+
+.CommentUsername {
+    font-weight: 600;
+    font-size: 12px;
+    color: #1c1e21;
+    margin-right: 6px;
+}
+
+.CommentText {
+    font-size: 13px;
+    color: #1c1e21;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+.ShowMoreComments {
+    background: transparent;
+    border: none;
+    color: #65676b;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-top: 8px;
+    transition: color 0.2s ease;
+}
+
+.ShowMoreComments:hover {
+    color: #1877f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .FeedContainer {
+        padding: 0 5px;
+    }
+    
+    .PostCard {
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .PostHeader {
+        padding: 12px 15px 8px;
+    }
+    
+    .PostContent {
+        padding: 0 15px 12px;
+    }
+    
+    .PostFooter {
+        padding: 6px 15px 12px;
+    }
+    
+    .CommentsSection {
+        padding: 10px 15px 12px;
+    }
+    
+    .FeedContainer .PostCard .PostHeader .UserAvatar,
+    .PostCard .PostHeader .UserAvatar,
+    .PostHeader .UserAvatar,
+    img.UserAvatar {
+        width: 34px !important;
+        height: 34px !important;
+        min-width: 34px !important;
+        min-height: 34px !important;
+        max-width: 34px !important;
+        max-height: 34px !important;
+        margin-right: 10px !important;
+    }
+    
+    .PostText {
+        font-size: 15px;
+    }
+    
+    .PostActions {
+        gap: 15px;
+    }
+    
+    .ActionBtn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .FeedContainer {
+        padding: 0;
+    }
+    
+    .PostCard {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+    
+    .PostHeader {
+        padding: 10px 12px 6px;
+    }
+    
+    .PostContent {
+        padding: 0 12px 10px;
+    }
+    
+    .PostFooter {
+        padding: 5px 12px 10px;
+    }
+    
+    .CommentsSection {
+        padding: 8px 12px 10px;
+    }
+    
+    .FeedContainer .PostCard .PostHeader .UserAvatar,
+    .PostCard .PostHeader .UserAvatar,
+    .PostHeader .UserAvatar,
+    img.UserAvatar {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        max-width: 32px !important;
+        max-height: 32px !important;
+        margin-right: 8px !important;
+    }
+    
+    .PostText {
+        font-size: 14px;
+    }
+    
+    .PostActions {
+        gap: 12px;
+    }
+    
+    .ActionBtn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    
+    .EmptyState {
+        padding: 40px 20px;
+    }
+    
+    .EmptyIcon {
+        font-size: 40px;
+    }
+    
+    .EmptyState h3 {
+        font-size: 16px;
+    }
+    
+    .EmptyState p {
+        font-size: 13px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.PostCard {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Estados de hover mejorados */
+.PostCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease;
+}
+
+/* Efectos en botones */
+.ActionBtn:active {
+    transform: scale(0.95);
+}
+
+.LikeBtn.liked .ActionIcon {
+    animation: heartBeat 0.6s ease-in-out;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.3); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.2); }
+    70% { transform: scale(1); }
+} 

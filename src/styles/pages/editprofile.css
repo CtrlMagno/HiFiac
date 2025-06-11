@@ -1,0 +1,434 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #020202;
+    display: flex;
+    flex-direction: column;
+    color: #F2EDE3;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 4vh;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+.IconEdit{
+   width: 200px;
+   height: auto;
+}
+
+.GlobalDiv{
+    border: 2px solid #FFC7C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 150px;
+    margin-left: 150px;
+    border-radius: 20px;
+}
+
+
+.HeaderDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Div1{
+    width: 100%;
+    min-width: 500px;
+}
+
+.FooterSection2{
+    display: flex;
+    gap: 3vh;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vh;
+    position: relative;
+    margin-bottom: 4vh;
+}
+
+.Logo{
+    height: 7vh;
+    width: auto;
+    margin: 0;
+}
+
+.SpaceBig{
+    margin-top: 800px;
+}
+
+.SpaceMedium{
+    margin-top: 600px;
+}
+
+.SpaceSmall{
+    margin-top: 200px;
+}
+
+.UltraSpaceSmall{
+    margin-top: 80px;
+}
+
+.SearchInput{
+    background-color: #F2EDE3;
+    color: #020202;
+    border-radius: 20px;
+    text-align: center; 
+    width: 95%;
+    max-width: 95%;
+    height: 100%;
+    margin-right: 4vh;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 15vh;
+    padding: 2vh;
+    border: 1px solid #FFC7C8;
+    border-radius: 20px;
+    margin: 5vh;
+    gap: 1vh;
+}
+
+.Container1{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 93%;
+    min-height: 8vh;
+    border: 1px solid #FFC7C8;
+    border-radius: 20px;
+    margin: 1vh;
+    gap: 1vh;
+    padding: 0 2vh;
+}
+
+.ContainerCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ArtistContainer{
+    text-decoration: none;
+    color: #F2EDE3;
+}
+
+.ArtistName{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.ArtistProfile{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 8vh;
+}
+
+.SearchIcon{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.SearchIcon:hover {
+    transform: scale(1.1);
+}
+
+button{
+    background-color: #F2EDE3;
+    color: #6e6e6e;
+    border: 1px solid #F2EDE3;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 40px;
+    min-width: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.button1{
+    background-color: #F2EDE3;
+    color: #6e6e6e;
+    border: 1px solid #F2EDE3;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 40px;
+    min-width: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: #e6d9c9;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(242, 237, 227, 0.3);
+}
+
+input{
+    background-color: #F2EDE3;
+    color: #020202;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center; 
+    width: 100%;
+    max-width: 480px;
+}
+
+.Title{
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ButtonContainer{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.CircleMedium{
+    position: absolute;
+    top: -30%;
+    left: -15%;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.CircleBig{
+    position: absolute;
+    top: -15%;
+    left: 40%;
+    width: 60%;
+    height: auto;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.LinkText {
+    color: #F2EDE3;
+    text-decoration: underline;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 1vh 0;
+}
+
+.LinkText:hover {
+    color: #FFC7C8;
+    transform: scale(1.05);
+}
+
+.SearchLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .GlobalDiv {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .Div1 {
+        min-width: 400px;
+    }
+
+    button,
+    .button1 {
+        min-width: 400px;
+    }
+
+    .IconEdit {
+        width: 150px;
+    }
+
+    .CircleMedium {
+        top: -20%;
+        left: -10%;
+        width: 40%;
+    }
+
+    .CircleBig {
+        top: -10%;
+        left: 35%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        padding: 1vh 2vh;
+    }
+
+    .Logo {
+        height: 5vh;
+    }
+
+    .GlobalDiv {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 2vh;
+    }
+
+    .Div1 {
+        min-width: 300px;
+    }
+
+    button,
+    .button1 {
+        min-width: 300px;
+        height: 35px;
+        font-size: 0.9em;
+    }
+
+    .IconEdit {
+        width: 120px;
+    }
+
+    input {
+        max-width: 300px;
+        font-size: 0.9em;
+    }
+
+    .CircleMedium {
+        top: -15%;
+        left: -5%;
+        width: 35%;
+    }
+
+    .CircleBig {
+        top: -5%;
+        left: 30%;
+        width: 45%;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1vh;
+    }
+
+    .FooterSection2 {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header {
+        padding: 1vh;
+    }
+
+    .Logo {
+        height: 4vh;
+    }
+
+    .GlobalDiv {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 1vh;
+    }
+
+    .Div1 {
+        min-width: 250px;
+    }
+
+    button,
+    .button1 {
+        min-width: 250px;
+        height: 30px;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+
+    .IconEdit {
+        width: 100px;
+    }
+
+    input {
+        max-width: 250px;
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .CircleMedium {
+        top: -10%;
+        left: -5%;
+        width: 30%;
+    }
+
+    .CircleBig {
+        top: -5%;
+        left: 25%;
+        width: 40%;
+    }
+
+    .Footer {
+        padding: 1vh;
+    }
+
+    .FooterText,
+    .FooterText1 {
+        font-size: 0.8em;
+    }
+}
+
+/* Add fluid typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(14px + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Add smooth transitions for responsive changes */
+* {
+    transition: all 0.3s ease-in-out;
+}
