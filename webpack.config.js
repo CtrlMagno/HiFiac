@@ -88,7 +88,7 @@ module.exports = {
       watch: true
     },
     hot: true,
-    port: 8080,
+    port: 3000,
     open: {
       target: ['landing.html']
     }
